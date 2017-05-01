@@ -1,0 +1,22 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "hosting": {
+    "public": "/",
+    "ignore":[
+      "/functions",
+      "/public",
+      ".DS_Store",
+      "README.md",
+      ".gitignore",
+      "/.git"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
